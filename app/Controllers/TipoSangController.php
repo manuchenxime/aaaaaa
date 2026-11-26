@@ -7,17 +7,26 @@ namespace App\Controllers;
 
 use Haki\Http\Request;
 
+<<<<<<< HEAD
 final class TipoSangController
+=======
+final class ProdutoController
+>>>>>>> 44d3d9349e7f1f3f89278e94342fd8ab30a6a8c2
 {
     public function index(Request $request): array
     {
         $pagina = (int)$request->query('pagina', 1);
 
+<<<<<<< HEAD
         return ['pagina' => $pagina, 'tipos_sanguineos' => []];
+=======
+        return ['pagina' => $pagina, 'tipossanguineos' => []];
+>>>>>>> 44d3d9349e7f1f3f89278e94342fd8ab30a6a8c2
     }
 
     public function show(int $id): array
     {
+<<<<<<< HEAD
         return ['tipo_sanguineo' => ['id' => $id]];
     }
 
@@ -29,4 +38,8 @@ final class TipoSangController
     }
 
 
+=======
+        return ['tiposanguineo' => ['id' => $id]];
+    }
+>>>>>>> 44d3d9349e7f1f3f89278e94342fd8ab30a6a8c2
 }

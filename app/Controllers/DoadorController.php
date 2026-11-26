@@ -20,6 +20,7 @@ final class DoadorController
     {
         return ['doador' => ['id' => $id]];
     }
+<<<<<<< HEAD
 
     public function store(CriarDoadorRequest $request, Response $response): Response
     {
@@ -27,4 +28,6 @@ final class DoadorController
 
         return $response->json(['doador' => $doador], 201);
     }
+=======
+>>>>>>> 44d3d9349e7f1f3f89278e94342fd8ab30a6a8c2
 }
